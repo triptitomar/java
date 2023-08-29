@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args){
+    int[] arr=new int[20];
+    int n,i,a;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter n ");
+    n=sc.nextInt();
+    System.out.println("enter position ");
+    a=sc.nextInt();
+    for (i = 0; i < n; i++)
+        {
+        System.out.println("enter array elemnts "+(i+1));
+        arr[i]=sc.nextInt();
+        }
+         System.out.println("output");
+        for (i = a; i < n; i++)
+        {
+        System.out.println(" "+arr[i]);  
+        }
+        for (i = 0; i < a; i++)
+        {
+        System.out.println(" "+arr[i]);      
+        }
+        }
+}    
